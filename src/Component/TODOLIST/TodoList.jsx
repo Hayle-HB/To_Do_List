@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
-import TypeWriter from "typewriter-effect";
 import "./TodoApp.css";
 
 
@@ -48,16 +47,7 @@ const TodoList = () => {
   };
   return (
     <div>
-      <h1 >
-        <TypeWriter
-          options={{
-            autoStart:true,
-            loop: true,
-            delay: 50,
-            strings: ["what's your plan for Today!"],
-          }}
-        />
-      </h1>
+      <h1 > What's your Plan for Today </h1>
 
       <TodoForm onSubmit={addTodo} />
       <Todo
